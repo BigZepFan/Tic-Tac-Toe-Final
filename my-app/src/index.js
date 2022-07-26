@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// TRY
+// TRY ↓
 let playerOneName = document.getElementById("player1");
 let playerTwoName = document.getElementById("player2");
 
@@ -18,7 +18,8 @@ button.addEventListener("click", function (theplayers) {
   playerOneName.innerText = player1;
   playerTwoName.innerText = player2;
 });
-// TRY
+
+// TRY ↑
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -40,7 +41,7 @@ class Board extends React.Component {
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
-    squares[i] = this.state.xIsNext ? "X" : "0";
+    squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({ squares: squares, xIsNext: !this.state.xIsNext });
   }
   renderSquare(i) {

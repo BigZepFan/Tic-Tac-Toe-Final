@@ -1,25 +1,30 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
   color: red;
+  background-color: black;
 }
-
+#root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
 button {
-  background-color: dodgerblue;
+  background-color: chartreuse;
   border: solid orange 3px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  color: navy;
-  border-radius: 6px;
-  /* padding: 1px 2px; */
+  color: dodgerblue;
   font-size: 16px;
   cursor: pointer;
 }
 
 ol,
 ul {
-  padding-left: 30px;
+  padding-left: 40%px;
 }
 
 .board-row:after {
@@ -33,18 +38,20 @@ ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: black;
+  border: 6px solid chartreuse;
   float: left;
-  font-size: 24px;
+  font-family: "Fascinate";
+  font-size: 6em;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  text-shadow: 1px 2px 2px fuchsia;
+  line-height: 165px;
+  height: 165px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 165px;
 }
 
 .square:focus {
@@ -64,17 +71,23 @@ ul {
   margin-left: 20px;
 }
 
+div.game-board {
+  height: 100%;
+  display: grid;
+  margin: auto;
+}
+
 h1 {
   color: fuchsia;
   text-align: center;
   font-family: Fascinate;
-  font-size: 2.5em;
+  font-size: 1.75em;
   text-shadow: 2px 4px 4px dodgerblue;
 }
 h2 {
   color: dodgerblue;
-  font-family: "Squada One", cursive;
-  font-size: 2.5em;
+  font-family: "Titan One";
+  font-size: 0.95em;
   text-align: center;
   text-shadow: 1px 2px 2px fuchsia;
 }
@@ -83,4 +96,24 @@ h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
+}
+p.input-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-right: 15px;
+}
+.gamers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
+.refresh {
+  margin-left: 45%;
 }
