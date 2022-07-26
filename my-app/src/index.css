@@ -1,0 +1,86 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
+button {
+  background-color: dodgerblue;
+  border: solid orange 3px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: navy;
+  border-radius: 6px;
+  /* padding: 1px 2px; */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+h1 {
+  color: fuchsia;
+  text-align: center;
+  font-family: Fascinate;
+  font-size: 2.5em;
+  text-shadow: 2px 4px 4px dodgerblue;
+}
+h2 {
+  color: dodgerblue;
+  font-family: "Squada One", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: 1px 2px 2px fuchsia;
+}
+h3 {
+  color: red;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+}
