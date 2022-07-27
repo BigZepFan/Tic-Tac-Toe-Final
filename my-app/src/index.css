@@ -1,7 +1,7 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: red;
   background-color: black;
@@ -14,7 +14,7 @@ body {
   margin: auto;
 }
 button {
-  background-color: chartreuse;
+  background-color: navy;
   border: solid orange 3px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -41,22 +41,23 @@ ul {
 .square {
   background: black;
   border: 6px solid chartreuse;
+  border-style: ridge;
   float: left;
   font-family: "Fascinate";
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
   text-shadow: 1px 2px 2px fuchsia;
-  line-height: 165px;
-  height: 165px;
+  line-height: 135px;
+  height: 135px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 165px;
+  width: 135px;
 }
 
 .square:focus {
-  outline: none;
+  outline: 2px;
 }
 
 .kbd-navigation .square:focus {
